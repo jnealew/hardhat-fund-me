@@ -12,7 +12,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         from: deployer,
         args: [],
         log: true,
-        // we need to wait if on a live network so we can verify properly
+        // wait if on a live network to verify properly
         waitConfirmations: network.config.blockConfirmations || 1,
     })
     
